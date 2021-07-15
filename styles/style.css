@@ -1,81 +1,86 @@
-/* fonts */
+/* ................
+        fonts
+        ............. */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-
-
-/* common styles or utilities */
-
-
+/* ...................
+common styles or utilities
+....................... */
 body{
     font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
 }
 h1{
-    font-size: 64px;
-    font-weight: 600;
-    margin: 0;
-    color: #FFFFFF;
+font-weight: 700;
+font-size: 64px;
+line-height: 80px;
+margin: 0%;
 }
 h2{
-    font-weight: 500;
     margin:0;
-    margin-top:15px;
+    font-weight: 500;
+    
+}
+p{
+    text-align:justify;
+    color:#6C6C6C;
+    padding-bottom: 10px ;
+    padding-right: 10px;
+    
 }
 
 
-/* header start */
-
-.top{
-    width: 100%;
-    height: 650px;
-    padding-top: 50px;
+/* ............
+header area 
+................ */
+.banner img{
+    width:100%;
+}
+.banner{
+    width:456px;
+}
+.head-area{
     background-color: #2D25A0;
-    display: flex;   
-}   
-.heading{
-    width: 500px;
-    height: 300px;
-    padding-left: 156px;
-    padding-top: 150px;   
+}
+.text{
+    margin:0;
+    font-size: 64px;
+    color:white;
 }
 .width{
-    width: 458px;
+    width:70%;
+    display: flex;
+    align-items: center;
+    padding:30px;
+    margin:0 auto;
+    justify-content: space-between;
 }
-.width img{
-    width: 100%;
-    padding-top: 153px;
-    padding-left: 102px;
-    padding-bottom: 86px;
-}
-
-/* header ends */
-
-
-/* button start */
-
-
+/* ...................
+    button area 
+    ................*/
 .link-button {
-    border-radius: 5px;
-    border: none;
-    background-image : linear-gradient(tomato, red);
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: 600;
-    padding: 12px;
-    width: 168px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 10px;
+     border-radius: 4px;
+     background-image : linear-gradient(tomato, red);
+     padding: 10px 40px ;
+     border: none;
+     color: white;
+     text-align: center; 
+     font-weight: 600;
+     width: 220px;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 5px;
 }
-  
 .link-button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
-  
+        
 .link-button span:after {
     content: '\00bb';
     position: absolute;
@@ -84,7 +89,7 @@ h2{
     right: -20px;
     transition: 0.5s;
 }
-  
+      
 .link-button:hover span {
     padding-right: 25px;
 }
@@ -93,51 +98,268 @@ h2{
     opacity: 1;
     right: 0;
 }
+.link-button1 {
+    border-radius: 4px;
+    background-image : linear-gradient(tomato, red);
+    padding: 10px 40px ;
+    border: none;
+    color: white;
+    text-align: center; 
+    font-weight: 600;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.link-button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+        
+.link-button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+      
+.link-button1:hover span {
+    padding-right: 25px;
+}
+  
+.link-button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
-/* button ends */
 
-
-main{
+/* ....................
+      players area
+........................... */
+.players{ 
+    width:330px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    padding: 15px;
+    border-radius: 2px;
+    margin-top:15px;
+    padding-left: 4%;
 }
-.container{
-    margin-top: 70px;
-    margin-right: 320px;
-}
-
-/* players start */
-
-.players{
+.image{
+    width:320px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 15px;
     grid-row-gap: 15px;
-    width:70%;
+    grid-column-gap: 15px;
+    
+}
+.image img{
+    width:100%;
+    border-radius: 2px;
+}
+
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width:33.33%;
     margin:0 auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    margin-top:0px;
 }
 .player{
+    
+    background-color: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding:10px;
-    border-radius: 2px;
     width: 330px;
-    height: 600px;
+    height: 550px;
+    padding-left:10px;
+    padding-top: 10px;
+    
 }
-.player .thumbnail img{
-    width: 100%;
-    height: 324px;
+/* News area */
+.color{
+    color:black;
 }
-.player-name{
-    color: #1E1E1E;
+.news{
+    padding-left: 5%;
 }
-.player-info{
-    text-align: justify;
-    color:#6C6C6C;
-    margin:0;
+.news-sec{
+    display: grid;
+    padding-left: 10%;
+
+}
+.article-width {
+    padding-left:20px;
+    padding-top: 20px;
+    display: flex;  
+}
+.article-width img{
+    width: 50%;
 }
 
-/* player ends */
+/* .................
+icon area 
+.............. */
+.icon {
+    font-size: 25px;
+    margin-left: 20px;
+   text-align: center;
+}
 
-/* article start */
+/* ..............
+logo-area 
+......................*/
+.logo{
+    width:350px;
+    margin:0 auto;
+    margin-top:80px;
+    padding-top: 2%;
+}
+.logo img{
+    width:100%;
+}
+/*...................
+ footer-area 
+ ...................*/
+ footer{
+     text-align: center;
+     padding-bottom: 10%;
+     
+ }
+ /* media quaries */
+ /* ...................
+    for mobile devices
+ .......................  */
+ @media only screen and (max-width:688px) {
+     .width{
+         flex-direction: column;
+     }
+     .details, .news{
+         grid-template-columns: repeat(1,1fr);
+         padding-right: 50%;
+         
+     }
+    .player{ 
+        flex-direction: row;
+        align-items: flex-start;
+         width:250px;
+         padding: 15px;
+      
+         height: 474px;
+    }
+    
+    .news-sec{
+        flex-direction: column;
+        padding:0;
+    }
+    
+     .banner{
+         width:300px;
+     }
+     .banner img, .article-width img{
+         width:100%;
+     }
+     .image{
+        width:250px;
+    }
+     .image img{
+        width:100%;
+    }
+    .article-width{
+        width: 300px;
+    }
+    .article-width img{
+        width: 100%;
+        padding-right: 15px;
+    }
+    h2{
+        font-weight: 500;
+    }
+     p{
+         font-size: 15px;
+     }
+     .logo{
+         padding-left: 10%;
+     }
+     .logo img{
+         width: 70%;
+         position:static;
+     }
+     footer{
+        padding-bottom: 10%;
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
 
+/*  ...................
+    for tablet devices
+ .......................    */
+
+ @media only screen and (min-width:689px) and (max-width:992px) {
+    .width{
+        flex-direction: column;
+    }
+    .details, .news{
+        grid-template-columns: repeat(2,1fr);
+        padding-right: 50%;
+        
+    }
+   .player{ 
+       flex-direction: row;
+       align-items: flex-start;
+        width:250px;
+        padding: 15px;
+     
+        height: 474px;
+   }
+   
+   .news-sec{
+       flex-direction: column;
+       padding:0;
+   }
+   
+    .banner{
+        width:300px;
+    }
+    .banner img, .article-width img{
+        width:100%;
+    }
+    .image{
+       width:250px;
+   }
+    .image img{
+       width:100%;
+   }
+   .article-width{
+       width: 650px;
+   }
+   .article-width img{
+       width: 100%;
+       padding-right: 15px;
+   }
+   h2{
+       font-weight: 500;
+   }
+    p{
+        font-size: 15px;
+    }
+    .logo{
+        padding-left: 10%;
+    }
+    .logo img{
+        width: 70%;
+        position:static;
+    }
+    footer{
+       padding-bottom: 10%;
+       font-size: 12px;
+       line-height: 24px;
+   }
+}
